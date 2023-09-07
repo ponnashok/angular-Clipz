@@ -3,7 +3,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth'
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Observable, delay, filter, map, of, switchMap } from 'rxjs';
-import IUsers from 'src/models/user.model';
+import IUsers from 'src/app/models/user.model';
 
 @Injectable({
   providedIn: 'root'

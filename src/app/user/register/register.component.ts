@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
-import IUsers from 'src/models/user.model';
+import IUsers from 'src/app/models/user.model';
 import { RegisteredValidators } from '../validators/registered-validators';
 import { EmailTaken } from '../validators/email-taken';
 
