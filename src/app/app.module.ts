@@ -11,11 +11,11 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { VideoModule } from './video/video.module';
 import { ClipComponent } from './clip/clip.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { ClipzListComponent } from './clipz-list/clipz-list.component';
+import { FbtimestampPipe } from './pipes/fbtimestamp.pipe';
 
 @NgModule({
   declarations: [
@@ -26,11 +26,11 @@ import { ClipzListComponent } from './clipz-list/clipz-list.component';
     ClipComponent,
     NotFoundComponent,
     ClipzListComponent,
+    FbtimestampPipe,
 
   ],
   imports: [
     BrowserModule,
-    VideoModule,
     UserModule,
     AngularFireModule.initializeApp(environment.fireBase),
     AngularFireAuthModule,
